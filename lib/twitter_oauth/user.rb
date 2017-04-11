@@ -12,7 +12,7 @@ module TwitterOAuth
     # code and an error message if not. Use this method to test if supplied user
     # credentials are valid.
     def verify_credentials
-      get('/account/verify_credentials.json')
+      get('/account/verify_credentials.json?include_email=true&skip_status=true')
     end
 
   end
